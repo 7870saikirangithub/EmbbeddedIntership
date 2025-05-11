@@ -1,0 +1,106 @@
+Leds  -each side 3 leds *4 = 12 
+ North --  Red1 - 2 of arudino  ,  yellow -- 03 Ar.uno ,Green -- 04 
+
+ south -- Red 2-- 5 ,Yellow -06  , Green - 07
+ East --  red 3 - 08 , yellow - 09 ,  Green -- 10
+ West -- red   4 - 11 ,yellow -12 ,Green -13 
+
+
+
+
+ (2,3,4);(5,6,7);(8,9,10);(11,12,13) -- Set of 4  for 4 way Traffic light 
+------------------------------------------------------------
+
+
+Const Int red[4] = {2,5,8,11};
+const Int Yellow[4] ={3,6,9,12};
+Const Int Green[4]={4.7,10,13};
+------------------------------------------
+
+--------------------------------------------
+int LEDRED1 = 2;  
+int LEDYELlow1 =3;//// North 
+int LEDGreen1 = 4 ;
+--------------------------------
+Int LedRed2 =5;
+int LedYellow2 = 6;// South 
+int Ledgreen2 = 7 ;
+----------------------------------
+Int LedRed3 =8;
+int LedYellow3 = 9;// east
+int Ledgreen3 = 10;
+-------------------------------------
+Int LedRed4 =11;
+int LedYellow4 = 12;// West
+int Ledgreen4= 13;
+-------------------------------------------------------------- 
+
+VoisSetup(){
+ LEDRED1 = 2;   LEDYELlow1 =3;//// North 
+ LEDGreen1 = 4 ; LedRed2 =5LedYellow2 = 6;// South 
+int Ledgreen2 = 7 ;
+---------------------------------- LedRed3 =8;
+LedYellow3 = 9;Ledgreen3 = 10;
+---------------------------------
+ LedRed4 =11; LedYellow4 = 12;// West
+ Ledgreen4= 13;
+--------------------------------------------------------------
+
+}
+
+
+----------------------------------------
+
+Void Loop (){
+Green1 (on) red1(low),yellow(low)
+
+digitalWrite (red1,Low);
+digitalwrite (Green1, High);
+Should On Delay (6000);///////////North
+DigitalWrite (Green1,Low);
+digitalWrite(yellow1 ,High)
+Delay (2000);
+DigitalWrite(Red1,High);
+------------------------------------
+
+////East/// 
+
+
+ Red2(Low)
+Green2(High)
+delay(6000)
+green(low)
+Yellow2(High)
+delay(2000)
+Red2 (High)
+---------------------------------------
+///West??///
+
+
+Red3(Low)
+Green3(High)
+delay(6000)
+Green3(Low)
+Yellow3(High)
+delay(2000)
+Red3(High)
+----------------------------------
+//South //
+
+
+Red4(Low)
+Green4(High)
+delay(6000)
+Green4(Low)
+Yellow(High)
+delay(2000)
+Red4(High)
+----------
+
+
+
+
+
+
+
+}
